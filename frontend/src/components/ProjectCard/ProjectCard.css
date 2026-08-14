@@ -1,0 +1,38 @@
+.project-card { overflow: hidden; display: flex; flex-direction: column; }
+
+.project-thumb {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  background: var(--surface-strong);
+  overflow: hidden;
+}
+
+.project-thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
+.project-card:hover .project-thumb img { transform: scale(1.06); }
+
+.project-thumb-placeholder {
+  width: 100%; height: 100%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 2.5rem; font-weight: 700;
+  background: var(--gradient-brand); color: #fff;
+}
+
+.project-overlay {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center; gap: 12px;
+  background: rgba(10, 14, 26, 0.55);
+  opacity: 0; transition: opacity 0.25s ease;
+}
+.project-card:hover .project-overlay { opacity: 1; }
+
+.project-icon-btn {
+  width: 42px; height: 42px; border-radius: 50%;
+  background: rgba(255,255,255,0.12); backdrop-filter: blur(6px);
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; font-size: 1.1rem;
+  transition: background 0.2s ease;
+}
+.project-icon-btn:hover { background: var(--primary); }
+
+.project-body { padding: 22px; flex: 1; display: flex; flex-direction: column; }
+.project-tech { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }

@@ -1,0 +1,2 @@
+.auth-page { display: flex; align-items: center; justify-content: center; }
+.auth-card { width: 100%; max-width: 420px; padding: 36px; margin: 0 auto; }

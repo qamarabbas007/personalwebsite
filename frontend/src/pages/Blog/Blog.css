@@ -1,0 +1,2 @@
+.blog-card { overflow: hidden; display: block; }
+.blog-cover { width: 100%; aspect-ratio: 16/9; object-fit: cover; }

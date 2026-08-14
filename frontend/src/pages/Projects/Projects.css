@@ -1,0 +1,3 @@
+.projects-toolbar { display: flex; flex-direction: column; gap: 16px; margin-bottom: 8px; }
+.projects-toolbar .form-control { max-width: 420px; }
+.projects-filters { display: flex; flex-wrap: wrap; gap: 10px; }

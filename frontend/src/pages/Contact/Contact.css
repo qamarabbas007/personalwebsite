@@ -1,0 +1,18 @@
+.contact-grid {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 32px;
+  align-items: start;
+}
+select.form-control option {
+  background: var(--bg-soft);
+  color: var(--text);
+}
+.contact-info { padding: 28px; display: flex; flex-direction: column; gap: 20px; }
+.contact-info-item { display: flex; align-items: center; gap: 12px; color: var(--text-muted); }
+
+.contact-form { padding: 32px; }
+
+@media (max-width: 860px) {
+  .contact-grid { grid-template-columns: 1fr; }
+}

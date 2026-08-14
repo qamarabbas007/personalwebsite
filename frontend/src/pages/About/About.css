@@ -1,0 +1,21 @@
+.about-grid {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.about-image { aspect-ratio: 4/5; overflow: hidden; }
+.about-image img { width: 100%; height: 100%; object-fit: cover; }
+.about-image-placeholder {
+  width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;
+  font-size: 4rem; font-weight: 800; background: var(--gradient-brand); color: #fff;
+}
+
+.about-info-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.about-info-grid p { font-weight: 600; margin-top: 4px; }
+
+@media (max-width: 860px) {
+  .about-grid { grid-template-columns: 1fr; }
+  .about-image { max-width: 300px; margin: 0 auto; }
+}

@@ -1,0 +1,13 @@
+.admin-page-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; flex-wrap: wrap; gap: 12px; }
+
+.admin-table-wrap { overflow-x: auto; border-radius: var(--radius-md); border: 1px solid var(--border); }
+.admin-table { width: 100%; border-collapse: collapse; background: var(--surface); }
+.admin-table th, .admin-table td { padding: 14px 18px; text-align: left; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
+.admin-table th { color: var(--text-muted); font-weight: 600; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em; }
+.admin-table tr:last-child td { border-bottom: none; }
+.admin-table tr:hover td { background: var(--surface-strong); }
+
+.admin-row-actions { display: flex; gap: 8px; }
+
+.admin-stat-card { padding: 24px; }
+.admin-stat-card h3 { font-size: 1.9rem; }

@@ -1,0 +1,6 @@
+/* Button relies mostly on global .btn classes in App.css; component-specific tweaks go here */
+.btn[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none !important;
+}
