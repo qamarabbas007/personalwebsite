@@ -26,6 +26,7 @@ export const getAiSessionId = () => {
 export const getFileUrl = (path) => {
   if (!path) return "";
   if (/^https?:\/\//i.test(path)) return path;
-  const base = import.meta.env.VITE_SOCKET_URL || "http://localhost:5000";
+  // const base = import.meta.env.VITE_SOCKET_URL || "http://localhost:5000";
+  const base = import.meta.env.VITE_SOCKET_URL;
   return `${base}${path.startsWith("/") ? "" : "/"}${path}`;
 };
